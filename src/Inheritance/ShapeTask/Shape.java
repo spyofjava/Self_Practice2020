@@ -15,11 +15,11 @@ public class Shape {
         hasPerimeter=true;
     }
 
-    public  double area(){
+    public  double calcarea(){
         return 0;
     }
 
-    public  double perimeter(){
+    public  double calcperimeter(){
         return 0;
     }
 
@@ -28,8 +28,8 @@ public class Shape {
     public String toString() {
         return "Shape{" +
                 "name='" + name + '\'' +
-                "Perimeter= "+perimeter()+
-                "Area= "+area()+
+                "Perimeter= "+calcperimeter()+
+                "Area= "+calcarea()+
                 '}';
     }
 }

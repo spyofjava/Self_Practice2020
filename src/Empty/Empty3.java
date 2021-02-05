@@ -1,9 +1,11 @@
 package Empty;
 
-
-public class Egzercise {
+public class Empty3 {
 
     public static void main(String[] args) {
+
+
+        String str = "aaabbc";
 
 
     }

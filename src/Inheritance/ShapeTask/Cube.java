@@ -10,7 +10,7 @@ public final class Cube extends Shape{
     }
 
     @Override
-    public double area(){
+    public double calcarea() {
         return 6*side*side;
     }
 

@@ -14,8 +14,8 @@ public class ShapeObject {
 
         Rectangle rectangle=new Rectangle(4, 5);
         System.out.println(rectangle.length);
-        System.out.println(rectangle.area());
-        System.out.println(rectangle.perimeter());
+        System.out.println(rectangle.calcarea());
+        System.out.println(rectangle.calcperimeter());
 
 
 

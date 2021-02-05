@@ -1,6 +1,6 @@
 package Inheritance.ShapeTask;
 
-public final class Rectangle extends Shape {
+public  class Rectangle extends Shape {
     public double width,length;
 
     public Rectangle( double width, double length) {
@@ -9,14 +9,16 @@ public final class Rectangle extends Shape {
         this.length = length;
     }
 
-    @Override
-    public double area(){
+
+    public double calcarea(){
         return width*length;
     }
 
 
     @Override
-    public double perimeter(){
+    public double calcperimeter(){
         return 2*(width+length);
     }
+
+
 }
