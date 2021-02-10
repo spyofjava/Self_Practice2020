@@ -44,7 +44,7 @@ public class Employee {
                 "name= " + name + '\'' +
                 ", jobTitle= " + jobTitle + '\'' +
                 ", ID= " + ID + '\'' +
-                ", salary= " + salary +
+                ", salary= $" + salary +
                 ", Company Name= "+companyName+
                 '}';
     }
