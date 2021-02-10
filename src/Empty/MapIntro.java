@@ -8,11 +8,13 @@ public class MapIntro {
         String str = "aaabbc";
         String result = "";    // a3b2c1  ==> a b c  ==> 3 2 1
 
+
+        //--------- LinkedHashSet -----> gives us un-duplicate
+
         for (String s : new LinkedHashSet<>(Arrays.asList(str.split("")))) {  // S: a, b, c
             int f = Collections.frequency( Arrays.asList(str.split("")) ,  s   );  // returns the frequency of s in str
             result += s + f;
         }
-
         System.out.println(result);
 
 

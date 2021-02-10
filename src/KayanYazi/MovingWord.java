@@ -6,8 +6,8 @@ import java.util.Arrays;
 public class MovingWord {
     public static void main(String[] args) throws InterruptedException {
 
-        //ArrayList<String> num=new ArrayList<>(Arrays.asList("s" + "a" + "b" + "i" + "h" + "a", "@", "@", "@", "m" + "u" + "h" + "a" + "m" + "m" + "e" + "t" + "@" + "T" + "a" + "h" + "a", "@", "@", "@", "s" + "a" + "r" + "e", "@", "@", "@", "i" + "b" + "r" + "a" + "h" + "i" + "m", "@", "@"));
-        ArrayList<String> num=new ArrayList<>(Arrays.asList("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"));
+        ArrayList<String> num=new ArrayList<>(Arrays.asList("s" + "a" + "b" + "i" + "h" + "a", "@", "@", "@", "m" + "u" + "h" + "a" + "m" + "m" + "e" + "t" + "@" + "T" + "a" + "h" + "a", "@", "@", "@", "s" + "a" + "r" + "e", "@", "@", "@", "i" + "b" + "r" + "a" + "h" + "i" + "m", "@", "@"));
+        //ArrayList<String> num=new ArrayList<>(Arrays.asList("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"));
         // Collections.swap(num,0,7);
         System.out.println("num = " + num);
         while (true){

@@ -1,4 +1,4 @@
-package Interface.HireEngineer;
+package Abstraction.HireEngineer;
 
 public interface RequirementEngineer {
 

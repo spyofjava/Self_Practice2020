@@ -1,6 +1,4 @@
-package Interface.HireEngineer;
-
-import java.util.Arrays;
+package Abstraction.HireEngineer;
 
 public class Main {
     public static void main(String[] args) {

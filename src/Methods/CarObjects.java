@@ -1,7 +1,7 @@
 package Methods;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
 public class CarObjects {
 
@@ -19,12 +19,16 @@ public class CarObjects {
         Car car4= new Car();
         car4.setInfo("Mercedes", "A310", "Black",2019);
 
+        /*
         ArrayList<Car> list=new ArrayList<>(Arrays.asList(car1,car2,car3,car4));
 
 
         for (Car each:list){
             System.out.println(each);
         }
+
+
+         */
 
 
 
