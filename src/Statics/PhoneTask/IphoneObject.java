@@ -14,7 +14,7 @@ public class IphoneObject {
 
         System.out.println(iphone.model);
         Iphone.model();
-        iphone.toString();
+
         Iphone.getInfo();
 
         iphone.call(1_321_654_651);
@@ -22,6 +22,10 @@ public class IphoneObject {
         //iphone.OS;
 
         System.out.println("Iphone.OS = " + Iphone.OS);
+
+        System.out.println("--------------------");
+
+        System.out.println(iphone);
 
     }
 }
