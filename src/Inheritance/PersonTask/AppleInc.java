@@ -8,7 +8,7 @@ public class AppleInc {
 
         System.out.println(developer.name);
 
-
+        System.out.println(developer.jobTitle);
 
 
     }
