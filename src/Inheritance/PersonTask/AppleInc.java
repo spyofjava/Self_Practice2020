@@ -16,6 +16,7 @@ public class AppleInc {
         Tester tester = new Tester("Aliyovic",34,'M',55,"DEVELOPER","1200012");
 
         System.out.println(tester.name);
+        tester.test();
 
 
     }
