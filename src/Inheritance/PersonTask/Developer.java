@@ -11,4 +11,15 @@ public class Developer extends Employee{
         System.out.println(jobTitle+" "+name+" is coding");
     }
 
+    @Override
+    public String toString() {
+        return "Developer{" +
+                "hourlyRate=" + hourlyRate +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", ID='" + ID + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                '}';
+    }
 }
