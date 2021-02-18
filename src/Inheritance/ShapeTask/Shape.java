@@ -2,8 +2,8 @@ package Inheritance.ShapeTask;
 
 public class Shape {
 
-    public String name;
-    public final static boolean isShape,hasArea ,hasPerimeter;
+    public String name;  //instance variable
+    public final static boolean isShape, hasArea, hasPerimeter; // constant -----3 static variables
 
     public Shape(String name) {
         this.name = name;
@@ -15,21 +15,14 @@ public class Shape {
         hasPerimeter=true;
     }
 
-    public  double calcarea(){
-        return 0;
-    }
-
-    public  double calcperimeter(){
+    public double calcArea(){
         return 0;
     }
 
 
-    @Override
-    public String toString() {
-        return "Shape{" +
-                "name='" + name + '\'' +
-                "Perimeter= "+calcperimeter()+
-                "Area= "+calcarea()+
-                '}';
+    public double calcPerimeter(){
+        return 0;
     }
+
+
 }
