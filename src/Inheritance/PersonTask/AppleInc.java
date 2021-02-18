@@ -18,6 +18,7 @@ public class AppleInc {
         System.out.println(tester.name);
         tester.test();
         tester.calcSalary();
+        System.out.println(tester);
 
 
     }
