@@ -10,6 +10,6 @@ public class AppleInc {
 
         System.out.println(developer.jobTitle);
 
-
+        System.out.println(developer.gender);
     }
 }
