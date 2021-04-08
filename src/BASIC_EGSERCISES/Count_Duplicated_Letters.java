@@ -2,16 +2,29 @@ package BASIC_EGSERCISES;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Count_Duplicated_Letters {
 
 
     public static void main(String[] args) throws InterruptedException {
 
-        ArrayList<Character> list = new ArrayList<>(Arrays.asList('A', 'A', 'A', 'B', 'B', 'C', 'C', 'C', 'C', 'C', 'D', 'D', 'D', 'D', 'D', 'D'));
+
+        Scanner scan  = new Scanner(System.in);
+        //ArrayList<String> list = new ArrayList<>(Arrays.asList("A", "A", "A", "B", "B", "C", "C", "C", "C", "C", "D", "D", "D", "D", "D", "D"));
 
 
-        ArrayList<Character> list1 = new ArrayList<>();
+        System.out.println("How many Character would you like to input? ");
+        int howmany= scan.nextInt();
+        ArrayList<String  > list = new ArrayList<>();
+
+        for (int i = 1; i <= howmany; i++) {
+            list.add(scan.next());
+        }
+
+
+
+        ArrayList<String> list1 = new ArrayList<>();
 
         for (int i = 0; i < list.size(); i++) {
             if (!list1.contains(list.get(i))) {
