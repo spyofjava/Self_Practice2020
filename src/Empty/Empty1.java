@@ -7,80 +7,47 @@ public class Empty1 {
 
 
 
-        public static void main(String[] args) {
+        public static void main(String[] args) throws InterruptedException {
 
-            List<Integer> list = new ArrayList<>();
-            list.addAll(Arrays.asList(1,2,3,4,5,6,7,8,1,2,3,4,5,1,2,3,4,5,6,7,1,2,3,4,5,6 ));
+           ArrayList<Character> list = new ArrayList<>(Arrays.asList('A','A','A','B','B','C','C','C','C','C','D','D','D','D','D','D'));
 
-        /*
-        for(int i = 0; i<= list.size()-1; i++){
-            if( list.get(i) < 5 ){
-                list.remove(i);
-            }
-        }
-         */
 
-        /*
-        for (int each : list) {
-            if(each<5){
-                list.remove(each);
-            }
-        }
-         */
+           ArrayList<Character> list1 = new ArrayList<>();
 
-            list.removeIf(p -> p < 5 );
-
-            Iterator<Integer> it = list.iterator();
-            while(it.hasNext()){
-                if( it.next() < 5 ){
-                    it.remove();
+            for (int i = 0; i < list.size(); i++) {
+                if (!list1.contains(list.get(i))) {
+                    list1.add(list.get(i));
                 }
             }
 
 
-            System.out.println(list);
 
-
-            System.out.println("===================================================");
-            Set<Double> set = new LinkedHashSet<>();
-            set.addAll(Arrays.asList(1.0,2.0,3.0,4.0,5.0,6.0,10.0,1.5, 2.5, 3.5)) ;
-
-            set.removeIf( p -> p < 4.5);
-
-            for( Iterator<Double> i = set.iterator();  i.hasNext() ;   ){
-                if( i.next() < 4.5 ){
-                    i.remove();
+            for (int i = 0; i < list1.size(); i++) {
+                int count = 0 ;
+                for (int j = 0; j < list.size(); j++) {
+                    if (list1.get(i).equals(list.get(j))){
+                        count++;
+                    }
                 }
+                System.out.print(list1.get(i) );
+                System.out.print(count);
             }
 
 
-            System.out.println(set);
-
-            System.out.println("================================================");
-
-            List<String>names=new ArrayList<>();
-            names.addAll(Arrays.asList("Ahmed","ahmed","aHmEd","John","Erjon","Daniel","Mustafa"));
-
-            Iterator<String> n=names.iterator();
-
-            while (n.hasNext()){
-                String eachName=n.next();
-                if(eachName.equalsIgnoreCase("ahmed")){
-                    n.remove();
+/*
+            for (int i = 0; i < list.size(); i++) {
+                int count = 0 ;
+                for (int j = 0; j < list.size(); j++) {
+                    if (list.get(i).equals(list.get(j))){
+                        count++;
+                    }else {
+                       break;
+                    }
                 }
-
+                System.out.println(count);
             }
-            System.out.println(names);
 
-
-            System.out.println("=====================================");
-
-
-
-
-
-
-
+ */
 
 
 
