@@ -44,4 +44,37 @@ public class Count_Duplicated_Letters {
             System.out.print(count);
         }
     }
+
+
+
+
+
+/*
+            //=====>     GOOD METHOD   ===========
+
+
+    String word = "AAAABBBCCCCDDDEFGGG";
+    String result = "";
+    ArrayList<String > list = new ArrayList<>(Arrays.asList(word.split("")));
+
+        for (String each : list) {
+        int frequency = Collections.frequency(list, each);
+        if (result.contains(each)){
+            continue;
+        }
+
+        result+= each+frequency;
+
+    }
+        System.out.println(result);
+
+
+
+
+ */
+
+
+
+
+
 }

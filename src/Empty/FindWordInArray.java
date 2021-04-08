@@ -1,15 +1,13 @@
 package Empty;
 
-import java.util.*;
-
-public class Empty1 {
+public class FindWordInArray {
 
 
     public static void main(String[] args) {
 
 
 
-     /*   //write a program to find out the word that it contains known letter
+         /*   //write a program to find out the word that it contains known letter
 
 
         String[] str = new String[3];
@@ -37,7 +35,5 @@ public class Empty1 {
             }
             System.out.println();
         }
-
-
     }
 }
