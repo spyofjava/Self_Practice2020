@@ -20,7 +20,6 @@ public class MovingWord {
             // num.remove(num.get(num.size()-1));
 
 
-
             Thread.sleep(100);
             System.out.print("\rnum = " +num);
 
