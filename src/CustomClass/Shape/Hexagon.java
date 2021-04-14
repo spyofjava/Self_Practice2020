@@ -8,7 +8,7 @@ public class Hexagon {
     public void SetInfo(double size) {
         this.size = size;
         perimeter = 6 * size;
-        area = (size*size*Math.sqrt(3))/4;
+        area = ((size*size*Math.sqrt(3))/4)*6;
     }
 
     public void getInfo(){
