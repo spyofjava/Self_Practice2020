@@ -32,14 +32,5 @@ public class Circle {
     }
 }
 
-class CircleObject{
 
-    public static void main(String[] args) {
 
-        Circle circle1 =  new Circle();
-        circle1.setInfo(5.667);
-        circle1.toString();
-        System.out.println("================");
-       // circle1.getInfo();
-    }
-}
