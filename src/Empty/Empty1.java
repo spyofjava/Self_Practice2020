@@ -5,38 +5,29 @@ import java.util.*;
 public class Empty1 {
 
 
-    public static void main(String[] args) {
+
+    public static void main(String[] args )  throws NullPointerException{
+
+
+        String a = new String("abc");
+        String b = new String("abc");
+
+        System.out.println(a==b); //two different object means two different place "==" checks whether the places are same in the memory
+        System.out.println(a.equals(b));// ".equals()" method checks whether contents are same.
+
+        int[] arr = new int[]{1,2};
+        int[] arrr = {1,2};
+        System.out.println("=====================");
+
+        System.out.println(Arrays.equals(arrr,arr));
+        System.out.println(arr==arrr);
+        System.out.println();
+
+
+        float[] f = new float[1];
 
 
 
-     /*   //write a program to find out the word that it contains known letter
-
-
-        String[] str = new String[3];
-        str[0] = "absdfg";
-        str[1] = "ertxcvf";
-        str[2] = "wrexcth";
-
-
-        String result = "F";
-        for (String each             if(each.contains(result.toLowerCase())){
-                System.out.println("in \""+each+"\" word was found out letter of \""+result+"\"");
-            }else {
-                System.err.println("in \""+each+"\" was not found out letter of \""+result+"\"");
-            }
-
-        }
-
-      */  //write a program to find out the word that it contains known letter
-
-
-        // write a program that is display od matris
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5 ; j++) {
-                System.out.print(" ("+i+","+j+") ");
-            }
-            System.out.println();
-        }
 
 
     }
