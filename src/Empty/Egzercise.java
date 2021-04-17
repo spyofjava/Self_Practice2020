@@ -8,16 +8,6 @@ public class Egzercise {
 
 
 
-        // IMPLICIT CASTING
-
-        short a= 45;
-        short b= (byte)a;
-
-
-        int d=5;
-        double f =d;
-        System.out.println(f);
-
 
     }
 }

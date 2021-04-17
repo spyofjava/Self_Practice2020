@@ -9,24 +9,24 @@ public class Empty1 {
     public static void main(String[] args )  throws NullPointerException{
 
 
-        String a = new String("abc");
-        String b = new String("abc");
+        int  rating = 3;
+        switch (rating){
 
-        System.out.println(a==b); //two different object means two different place "==" checks whether the places are same in the memory
-        System.out.println(a.equals(b));// ".equals()" method checks whether contents are same.
+            case 1:
+                System.out.println("this restaurant is not my favorite");
+               // break;
+            case 2:
+                System.out.println("this restaurant is good");
+               // break;
+            case 3:
+                System.out.println("this restaurant is fantastic");
+               // break;
+            default:
+                System.out.println("I've never dined at this restaurant");
+               // break;
 
-        int[] arr = new int[]{1,2};
-        int[] arrr = {1,2};
-        System.out.println("=====================");
 
-        System.out.println(Arrays.equals(arrr,arr));
-        System.out.println(arr==arrr);
-        System.out.println();
-
-
-        float[] f = new float[1];
-
-
+        }
 
 
 

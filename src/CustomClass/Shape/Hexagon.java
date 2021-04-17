@@ -1,9 +1,10 @@
 package CustomClass.Shape;
 
 public class Hexagon {
-    public double perimeter;
-    public double area;
     public double size;
+    public double perimeter = 6 * size;
+    public double area = ((size*size*Math.sqrt(3))/4)*6;
+
 
     public void SetInfo(double size) {
         this.size = size;
