@@ -1,11 +1,8 @@
 package Empty;
 
-
-public class Egzercise {
+public class Exercise {
 
     public static void main(String[] args) {
-
-
 
 
 
