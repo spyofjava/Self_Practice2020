@@ -9,25 +9,16 @@ public class Empty1 {
     public static void main(String[] args )  throws NullPointerException{
 
 
-        int  rating = 3;
-        switch (rating){
+        ArrayList<Integer> x = new ArrayList<>( Arrays.asList(2,3,1,3,2,2,4,5,21,7,34,8,3,3,7,6,9,6));
+        ArrayList<Integer> y = new ArrayList<>();
+        for (int i = 0; i < x.size(); i++) {
 
-            case 1:
-                System.out.println("this restaurant is not my favorite");
-               // break;
-            case 2:
-                System.out.println("this restaurant is good");
-               // break;
-            case 3:
-                System.out.println("this restaurant is fantastic");
-               // break;
-            default:
-                System.out.println("I've never dined at this restaurant");
-               // break;
-
-
+                if (!y.contains(x.get(i))){
+                    y.add(x.get(i));
+                }
         }
 
+        System.out.println(y);
 
 
     }
