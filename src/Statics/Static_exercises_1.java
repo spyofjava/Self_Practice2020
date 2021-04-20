@@ -9,15 +9,21 @@ public class Static_exercises_1 {
     public int age = 37;
     public static LocalDate timeline = LocalDate.now();
 
-    public static double PI = Math.PI;
-    public static String last_name = "Uludag";
+    public static double PI ;
+    public static String last_name ;
     public static int number = 13;
 
 
 
+    static {
+        PI = Math.PI;
+        last_name = "Uludag";
+        double x =10.45;
+    }
 
     public static void static_method(){
         System.out.println("static method");
+
     }
 
 
@@ -40,6 +46,7 @@ public class Static_exercises_1 {
         System.out.println(timeline.getDayOfYear());
         System.out.println(timeline.getEra());
         System.out.println(timeline.lengthOfMonth());
+
 
 
     }
