@@ -1,4 +1,4 @@
 package Empty;
 
-public class A {
+public class A extends B{
 }
