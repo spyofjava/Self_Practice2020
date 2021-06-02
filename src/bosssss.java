@@ -6,35 +6,17 @@ public class bosssss {
 
     public static void main(String[] args) {
 
-       String [] list = {"a","b","f","r","f","a","y","u","o","r","t","y","g","h","e","t","y","o"};
+        int [ ] list1 = {1,2,3,4,5};
+        int [ ] list2 = {3,4,5,6,7};
+
+        int[] cl = new int[list1.length+ list2.length];
+        for (int i = list1.length; i < list1.length+ list2.length; i++) {
+           cl[i] = list2[i];
+       }
 
 
-        ArrayList<String> last_list =new ArrayList<>();
-        for (int i = 0; i < list.length; i++) {
-            int count = 0;
+        System.out.println(Arrays.toString(cl));
 
-            for (int j = 0; j < list.length; j++) {
-
-                if (list[i].equals(list[j])){
-                    count++;
-                }
-               /*
-                if (count == 2){
-                    last_list.add((list[i]));
-                }
-
-                */
-            }
-            if (count == 2){
-                if (!last_list.contains(list[i])) {
-                    last_list.add((list[i]));
-                }
-
-            }
-        }
-
-
-        System.out.println("duplicated elements: "+ last_list);
     }
 
 }
