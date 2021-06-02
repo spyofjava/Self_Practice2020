@@ -7,7 +7,6 @@ public class concate_two_Arrays {
 
         int[] list1 = {1, 2, 3, 4, 5};
         int[] list2 = {3, 4, 5, 6, 7};
-
         int[] concated_list = new int[list1.length + list2.length];
 
         for (int i = 0; i < list1.length; i++) {
