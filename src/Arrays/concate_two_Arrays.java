@@ -18,6 +18,7 @@ public class concate_two_Arrays {
                 concated_list[j] = list2[i];
             i++;
         }
+
         System.out.println(Arrays.toString(concated_list));
 
     }
