@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class concate_two_Arrays {
     public static void main(String[] args) {
 
-        int[] list1 = {17, 234, 3, 423, 5};
+        int[] list1 = {17, 234, 3, 423, 51};
         int[] list2 = {55, 4, 512, 6, 7};
         int[] concated_list = new int[list1.length + list2.length];
 
