@@ -36,9 +36,8 @@ public class PcEngineer implements RequirementEngineer {
 
     @Override
     public void Experiences(String[] arr) {
-
+        System.out.println("I worked these companies: ");
         for (int i = 0; i < arr.length; i++) {
-            System.out.println("I worked these companies: ");
             System.out.println(arr[i]);
         }
     }

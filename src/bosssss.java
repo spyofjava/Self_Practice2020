@@ -1,57 +1,40 @@
-import Utility.Perm_Comb;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class bosssss {
 
-
     public static void main(String[] args) {
 
-        Permutation(5, 2);
-        Combination(5, 2);
+       String [] list = {"a","b","f","r","f","a","y","u","o","r","t","y","g","h","e","t","y","o"};
 
 
-        Perm_Comb.Permutation(6, 2);
-        Perm_Comb.Combination(7, 2);
+        ArrayList<String> last_list =new ArrayList<>();
+        for (int i = 0; i < list.length; i++) {
+            int count = 0;
 
+            for (int j = 0; j < list.length; j++) {
 
-    }
+                if (list[i].equals(list[j])){
+                    count++;
+                }
+               /*
+                if (count == 2){
+                    last_list.add((list[i]));
+                }
 
-    public static void Permutation(int a, int b) {
-        int x = a;
-        int y = b;
-        int result = 1;
-        for (int i = 1; i <= b; i++) {
+                */
+            }
+            if (count == 2){
+                if (!last_list.contains(list[i])) {
+                    last_list.add((list[i]));
+                }
 
-            result *= a;
-            a--;
-        }
-
-        System.out.println("P(" + x + " , " + y + ")= " + result);
-    }
-
-    public static void Combination(int a, int b) {
-
-        int x = a;
-        int y = b;
-        int result = 1;
-        for (int i = 1; i <= b; i++) {
-
-            result *= a;
-            a--;
-
-        }
-
-        int denominator = 1;
-        for (int i = b; i > 0; i--) {
-
-            denominator *= b;
-            b--;
-
+            }
         }
 
 
-         System.out.println("C(" + x + " , " + y + ")= " +result/denominator);
-
+        System.out.println("duplicated elements: "+ last_list);
     }
-
 
 }

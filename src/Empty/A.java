@@ -1,21 +1,36 @@
 package Empty;
 
-public class A extends B{
+public class A {
 
-    public String name ;
-    public A(String name) {
-       this.name = name;
+    private String name ;
+    private String lastName;
+
+    public A(String name,String lastName){
+        this.name=name;
+        this.lastName = lastName;
     }
 
-    public static void methodA(){
-        System.out.println("method A");
-
+    public void methodA(){
+        System.out.println("selam");
     }
 
-    public static void main(String[] args) {
-
-
+    public String getName(){
+        return name;
     }
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getLastName(){
+        return lastName;
+    }
+
+    public void setLastName(String lastName){
+        this.lastName = lastName;
+    }
+
+
+
 
 
 
