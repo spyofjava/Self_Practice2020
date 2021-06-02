@@ -12,7 +12,6 @@ public class concate_two_Arrays {
 
         for (int i = 0; i < list1.length; i++) {
             concated_list[i] = list1[i];
-
         }
 
         int i=0;
