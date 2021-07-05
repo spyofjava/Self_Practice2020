@@ -1,4 +1,4 @@
-package Important_Codes;
+package July_Exercises;
 
 import java.awt.*;
 import java.util.Collection;

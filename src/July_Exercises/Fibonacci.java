@@ -1,4 +1,4 @@
-package Important_Codes;
+package July_Exercises;
 
 public class Fibonacci {
 
