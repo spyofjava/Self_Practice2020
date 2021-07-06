@@ -1,5 +1,4 @@
 package July_Exercises;
-
 import java.util.Arrays;
 
 public class RemovingDuplicatesInArray {
